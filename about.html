@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.typekit.net/zwb6ktb.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Untitled Document</title>
+<style type="text/css">
+	
+#wrapper {
+min-width: 375px;
+max-width: 1000px;
+margin-left: auto;
+margin-right: auto;    
+}
+	
+header {
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    margin-bottom: 10px;
+    background-color: #D9DDD9;
+    font-family: "reiher-headline", sans-serif;
+    font-style: normal;
+    color: #1C2526;
+    font-weight: 400;
+    font-size: 2.5rem;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+	margin-left: 10px;
+    margin-bottom: 20px;
+    grid-area: header;
+    background-repeat: no-repeat;
+    }  
+	
+nav {
+        background-color: #1C2526;
+        margin-bottom: 10px; 
+		grid-area: nav;
+    }
+    
+main {
+        margin-bottom: 10px; 
+		grid-area: main;
+    } 
+	
+footer{
+	background-color: #D9DDD9;
+	grid-area: footer;
+	padding-left: 10px;
+	}
+
+p{
+	font-family: "reiher-headline", sans-serif;
+	font-size: 125%;
+	line-height: 125%
+	}
+	
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+position: relative;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #D9DDD9;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 784px) { 
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 784px) { 
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+	header{
+		font-size: 1.75rem;
+	}
+}
+    
+
+@media screen and (min-width:784px){ 
+	#wrapper {
+		display: grid;
+		grid-template-areas:
+		'header header header header header'
+			'nav nav nav nav nav'
+			'main main main article article'
+			'footer footer footer footer footer'
+	}
+}
+	
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+	
+<header> <img src="links/design_history_logo_1.png" width="300" height="201" alt=""/>Postmodern Designer</header>	
+	
+<nav class="topnav" id="myTopnav">
+	
+<a href="index.html"> Home </a>
+<a href="about.html"> About </a>
+<a href="additional.html"> Additional Reading </a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</nav>
+	
+<main>
+		<p>Lucille Tenazas is a Filipino American graphic designer, educator, and curator whose work has had a profound influence on contemporary design practice in the United States. Often described as a bridge between modernist traditions and postmodern experimentation, Tenazas developed a visual language that combines conceptual clarity, cultural awareness, and typographic innovation. Her contributions extend beyond professional design into education and mentorship, shaping generations of designers through her teaching and leadership.</p>
+			<figure><img src="links/img_02_sized.jpg" width="100%" alt=""/>
+		    <figcaption>Collab with Class Parsons, The New School, 2017</figcaption></figure>
+			
+<p>Tenazas studied at the California College of the Arts and later Cranbrook Academy of Art, where she was exposed to experimental approaches to typography and form. This experience informed her distinctive style, which frequently challenges rigid modernist grids while maintaining strong compositional balance. Her posters, publications, and identity systems demonstrate a sensitivity to language, layering, and spatial relationships, often incorporating subtle references to history, migration, and cultural hybridity. Rather than relying on decorative excess, Tenazas emphasizes meaning and context, encouraging viewers to engage thoughtfully with visual communication.</p>
+			
+	<figure><img src="links/img_03_sized.jpg" width="800" height="354" alt=""/>
+    <figcaption>Moto Design Identity Package, 1993</figcaption></figure>
+	
+<p>In addition to her design practice, Tenazas has played a vital role in design education. She taught for many years at Parsons School of Design in New York, where she eventually became the first woman to chair the MFA Design program. Through teaching, writing, and curatorial work, she has advocated for critical thinking, diversity, and cross-cultural dialogue within the design field. Her leadership helped expand conversations around identity and representation in graphic design, influencing how emerging designers understand their social and cultural responsibilities.</p>
+	<figure><img src="links/img_04_sized.jpg" width="100%" alt=""/>
+    <figcaption>California College of Arts and Crafts, Adopt-a-Book, 1992</figcaption></figure>
+
+<p>Tenazas’s achievements have been widely recognized, including being named an AIGA Medalist, one of the highest honors in the design profession. This recognition reflects not only the quality of her visual work but also her lasting impact as an educator and thought leader. Ultimately, Lucille Tenazas stands as a pivotal figure in graphic design whose practice demonstrates that design is not merely aesthetic problem-solving but a powerful tool for cultural reflection, communication, and change.
+	</p>
+
+	 </main>
+	
+<section>
+	
+  </section>	
+	
+<footer>
+	<p>Published images used in this website are for educational purposes only.<br>
+  Emily Houston</p></footer>
+</div>		
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+	
+</body>
+</html>
